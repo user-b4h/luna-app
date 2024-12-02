@@ -1,28 +1,21 @@
 <script>
 !function() {
-    var newPage = 'https://www.luna-app.f5.si/';
-    var isMobile = (function() {
-        var ua = navigator.userAgent.toLowerCase();
-        var sdev = /iphone;|(android|nokia|blackberry|bb10;).+mobile|android.+fennec|opera.+mobi|windows phone|symbianos/;
-        return sdev.test(ua);
-    })();
-    if (isMobile) {
-        var separatednewPage = newPage.match(/(^https?:\/\/[^?#]+)(?:\?([^#]*))?(#.*)?$/);
-        var newOriginPath = separatednewPage[1];
-        var newFlagment = separatednewPage[3];
-        var oldReferrer = document.referrer ? 'referrer=' + encodeURIComponent(document.referrer) : '';
-        var oldQuery = location.search.slice(1);
-        var newQuery = [separatednewPage[2], oldQuery, oldReferrer].filter(function(q) {
-            return !!q
-        }).join('&');
-        var newLocation = newOriginPath;
-        if (newQuery) {
-            newLocation = newLocation + '?' + newQuery;
-        }
-        if (newFlagment) {
-            newLocation = newLocation + newFlagment;
-        }
-        location.href = newLocation;
+    var newPage = https://www.luna-app.f5.si/';
+    var separatednewPage = newPage.match(/(^https?:\/\/[^?#]+)(?:\?([^#]*))?(#.*)?$/);
+    var newOriginPath = separatednewPage[1];
+    var newFlagment = separatednewPage[3];
+    var oldReferrer = document.referrer ? 'referrer=' + encodeURIComponent(document.referrer) : '';
+    var oldQuery = location.search.slice(1);
+    var newQuery = [separatednewPage[2], oldQuery, oldReferrer].filter(function(q) {
+        return !!q
+    }).join('&');
+    var newLocation = newOriginPath;
+    if (newQuery) {
+        newLocation = newLocation + '?' + newQuery;
     }
+    if (newFlagment) {
+        newLocation = newLocation + newFlagment;
+    }
+    location.href = newLocation;
 }();
 </script>
