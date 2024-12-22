@@ -2,6 +2,7 @@
 
 body {
   font-size: 1.5rem;
+  font-family: "ヒラギノ丸ゴ Pro W2", "Hiragino Maru Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
   color: #333333;
   background: #fbfbfb;
 }
@@ -10,7 +11,4 @@ body {
     color: #eeeeee;
     background: #171717;
   }
-}
-* {
-  font-family: "ヒラギノ丸ゴ Pro W2", "Hiragino Maru Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
 }
